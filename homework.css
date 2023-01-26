@@ -99,11 +99,18 @@ section{
 footer{
     margin: 50px;
     display: flex;
+    justify-content: center;
+}
+
+.footerimg{
+    margin: 10px;
+    width: 20%;
 }
 
 footer img{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 footer ul{
@@ -118,3 +125,44 @@ footer ul li{
 footer ul h1{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media(max-width: 1000px){
+    header{
+        display: none;
+    }
+
+    .container .card ul h1{
+        min-width: 200px;
+    }
+
+    .container .card button{
+        min-width: 90px;
+    }
+
+    .container .card{
+        flex-direction: column;
+    }
+
+    .container .card img{
+        min-width: 100px;
+    }
+
+
+
+
+    footer{
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer ul{
+        padding: 0;
+    }
+
+    .footerimg{
+        margin: auto;
+    }
+
+}
+
